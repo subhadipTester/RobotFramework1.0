@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-03T21:21:14.586817" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests">
+<suite id="s1-s1" name="PracticeProjectUITest" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest">
+<suite id="s1-s1-s1" name="testDemo4" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo4.robot">
+<test id="s1-s1-s1-t1" name="Validate Child window Functionality" line="23">
+<kw name="open the browser with login page url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:15.713340" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-03T21:21:15.712361" elapsed="2.438863"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:18.152666" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-03T21:21:18.151665" elapsed="0.286214"/>
+</kw>
+<status status="PASS" start="2024-05-03T21:21:15.710274" elapsed="2.728104"/>
+</kw>
+<kw name="Select the link for Child Window">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:18.440027" level="INFO">Clicking element 'css:.blinkingText'.</msg>
+<msg time="2024-05-03T21:21:19.233537" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-03T21:21:19.234497" level="FAIL">Element with locator 'css:.blinkingText' not found.</msg>
+<arg>css:.blinkingText</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-03T21:21:18.439527" elapsed="0.797976">Element with locator 'css:.blinkingText' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-05-03T21:21:19.237503" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-03T21:21:18.439030" elapsed="0.799473">Element with locator 'css:.blinkingText' not found.</status>
+</kw>
+<kw name="Verify User is switched to Child Window">
+<status status="NOT RUN" start="2024-05-03T21:21:19.238503" elapsed="0.000000"/>
+</kw>
+<kw name="Grab Email id in the child window">
+<status status="NOT RUN" start="2024-05-03T21:21:19.238503" elapsed="0.000000"/>
+</kw>
+<kw name="Switch to parent window and enter email id">
+<status status="NOT RUN" start="2024-05-03T21:21:19.238503" elapsed="0.000000"/>
+</kw>
+<kw name="Close existing Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-03T21:21:19.239502" elapsed="2.217790"/>
+</kw>
+<status status="PASS" start="2024-05-03T21:21:19.238503" elapsed="2.219864"/>
+</kw>
+<tag>NEWFEATURE</tag>
+<status status="FAIL" start="2024-05-03T21:21:15.708255" elapsed="5.750112">Element with locator 'css:.blinkingText' not found.</status>
+</test>
+<doc>To validate login form</doc>
+<status status="FAIL" start="2024-05-03T21:21:14.778362" elapsed="6.681003"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:21:14.772829" elapsed="6.687541"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:21:14.688237" elapsed="6.773058"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">NEWFEATURE</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="PracticeProjectUITest">Tests.PracticeProjectUITest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="testDemo4">Tests.PracticeProjectUITest.testDemo4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

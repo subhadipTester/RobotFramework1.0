@@ -1,0 +1,58 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.PracticeProjectUITest                                                   
+==============================================================================
+Tests.PracticeProjectUITest.testDemo3 :: To validate login form               
+==============================================================================
+Select the Form and Navigate to child window                            
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo3.robot:32
+    T:  Select the Form and Navigate to child window    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo3.robot:34
+      Fill the Login Details and Login Form    ${user_name}    ${valid_password}
+      |  ${user_name} = rahulshettyacademy (str)
+      |  ${valid_password} = learning (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo3.robot:77
+      Click Button    id:okayBtn
+______________________________________________________________________________
+| FAIL |
+ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=124.0.6367.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF720FB1502+60802]
+	(No symbol) [0x00007FF720F2AC02]
+	(No symbol) [0x00007FF720DE7B13]
+	(No symbol) [0x00007FF720E38052]
+	(No symbol) [0x00007FF720E2AE8B]
+	(No symbol) [0x00007FF720E5AB7A]
+	(No symbol) [0x00007FF720E2A7C6]
+	(No symbol) [0x00007FF720E5AD90]
+	(No symbol) [0x00007FF720E7A224]
+	(No symbol) [0x00007FF720E5A923]
+	(No symbol) [0x00007FF720E28FEC]
+	(No symbol) [0x00007FF720E29C21]
+	GetHandleVerifier [0x00007FF7212B411D+3217821]
+	GetHandleVerifier [0x00007FF7212F60B7+3488055]
+	GetHandleVerifier [0x00007FF7212EF03F+3459263]
+	GetHandleVerifier [0x00007FF72106B846+823494]
+	(No symbol) [0x00007FF720F35F9F]
+	(No symbol) [0x00007FF720F30EC4]
+	(No symbol) [0x00007FF720F31052]
+	(No symbol) [0x00007FF720F218A4]
+	BaseThreadInitThunk [0x00007FFD83B77344+20]
+	RtlUserThreadStart [0x00007FFD846A26B1+33]
+------------------------------------------------------------------------------
+Tests.PracticeProjectUITest.testDemo3 :: To validate login form       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.PracticeProjectUITest                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\Python Automation Framework\PythonFramework\RobotFramework\pabot_results\12\output.xml

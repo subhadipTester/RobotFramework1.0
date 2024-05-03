@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-03T21:20:51.128108" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests">
+<suite id="s1-s1" name="PracticeProjectAPITest" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectAPITest">
+<suite id="s1-s1-s1" name="e2eAPITest" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectAPITest\e2eAPITest.robot">
+<test id="s1-s1-s1-t1" name="Retrieve the Book Details which got added using AuthorName" line="51">
+<kw name="GET" owner="RequestsLibrary">
+<msg time="2024-05-03T21:20:53.333452" level="INFO">GET Request : url=https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=Javier%20Moreno 
+ path_url=/Library/GetBook.php?AuthorName=Javier%20Moreno 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2024-05-03T21:20:53.333953" level="INFO">GET Response : url=https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=Javier%20Moreno 
+ status=404, reason=Not Found 
+ headers={'Date': 'Fri, 03 May 2024 15:50:53 GMT', 'Server': 'Apache/2.4.52 (Ubuntu)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST', 'Access-Control-Max-Age': '3600', 'Access-Control-Allow-Headers': 'Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With', 'Content-Length': '70', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Content-Type': 'application/json;charset=UTF-8'} 
+ body={"msg":"The book by requested bookid \/ author name does not exists!"} 
+ </msg>
+<msg time="2024-05-03T21:20:53.334268" level="FAIL">Url: https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=Javier%20Moreno Expected status: 404 != 200</msg>
+<var>${get_response}</var>
+<arg>${base_url}/Library/GetBook.php</arg>
+<arg>params=AuthorName=${author_name}</arg>
+<arg>expected_status=200</arg>
+<doc>Sends a GET request.</doc>
+<status status="FAIL" start="2024-05-03T21:20:51.462141" elapsed="2.031854">Url: https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=Javier%20Moreno Expected status: 404 != 200</status>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${get_response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:53.494517" elapsed="0.000479"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${isbn}</arg>
+<arg>${get_response.json()}[0][isbn]</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:53.494996" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${aisle}</arg>
+<arg>${get_response.json()}[0][aisle]</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:53.495596" elapsed="0.000000"/>
+</kw>
+<tag>API</tag>
+<status status="FAIL" start="2024-05-03T21:20:51.460214" elapsed="2.035881">Url: https://rahulshettyacademy.com/Library/GetBook.php?AuthorName=Javier%20Moreno Expected status: 404 != 200</status>
+</test>
+<status status="FAIL" start="2024-05-03T21:20:51.215268" elapsed="2.281828"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:20:51.211842" elapsed="2.286252"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:20:51.180912" elapsed="2.317780"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">API</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="PracticeProjectAPITest">Tests.PracticeProjectAPITest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="e2eAPITest">Tests.PracticeProjectAPITest.e2eAPITest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

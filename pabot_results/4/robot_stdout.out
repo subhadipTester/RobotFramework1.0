@@ -1,0 +1,31 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.PracticeProjectAPITest                                                  
+==============================================================================
+Tests.PracticeProjectAPITest.e2eAPITest                                       
+==============================================================================
+Delete the Book from database                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectAPITest\e2eAPITest.robot:58
+    T:  Delete the Book from database    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectAPITest\e2eAPITest.robot:61
+      POST    ${base_url}/Library/DeleteBook.php    json=${delete_req}    expected_status=200
+      |  ${base_url}/Library/DeleteBook.php = https://rahulshettyacademy.com/Library/DeleteBook.php (str)
+      |  json=${delete_req} = json={'ID': ''} (str)
+______________________________________________________________________________
+| FAIL |
+Url: https://rahulshettyacademy.com/Library/DeleteBook.php Expected status: 404 != 200
+------------------------------------------------------------------------------
+Tests.PracticeProjectAPITest.e2eAPITest                               | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.PracticeProjectAPITest                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\Python Automation Framework\PythonFramework\RobotFramework\pabot_results\4\output.xml

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-03T21:20:51.202070" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests">
+<suite id="s1-s1" name="PracticeProjectUITest" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest">
+<suite id="s1-s1-s1" name="e2eTest" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\e2eTest.robot">
+<test id="s1-s1-s1-t1" name="Select the Form and Navigate to child window" line="43">
+<kw name="open the browser with the url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:20:51.851824" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>${browser_name}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-03T21:20:51.850826" elapsed="3.425491"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:20:55.277678" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-03T21:20:55.276851" elapsed="0.896489"/>
+</kw>
+<status status="PASS" start="2024-05-03T21:20:51.849826" elapsed="4.323514"/>
+</kw>
+<kw name="Fill the Login Details and Login Form" owner="LandingPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:20:56.176329" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<msg time="2024-05-03T21:20:57.325486" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-03T21:20:57.325486" level="FAIL">Element with locator 'id:username' not found.</msg>
+<arg>id:username</arg>
+<arg>rahulshettyacademy</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-03T21:20:56.175329" elapsed="1.564933">Element with locator 'id:username' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>learning</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:57.740761" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css:input[value='user']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:57.741319" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:57.742015" elapsed="0.000202"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:okayBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:57.742326" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:okayBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:57.742829" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:57.742829" elapsed="0.000499"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>css:select.form-control</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:57.743328" elapsed="0.000501"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:57.743829" elapsed="0.000000"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<arg>terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" start="2024-05-03T21:20:57.743829" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-05-03T21:20:56.174327" elapsed="1.570401">Element with locator 'id:username' not found.</status>
+</kw>
+<kw name="Close existing Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-03T21:20:57.745900" elapsed="7.428817"/>
+</kw>
+<status status="PASS" start="2024-05-03T21:20:57.745400" elapsed="7.430974"/>
+</kw>
+<tag>REGRESSION</tag>
+<tag>SMOKE</tag>
+<status status="FAIL" start="2024-05-03T21:20:51.828681" elapsed="13.348179">Element with locator 'id:username' not found.</status>
+</test>
+<doc>To validate login form</doc>
+<status status="FAIL" start="2024-05-03T21:20:51.290442" elapsed="13.888437"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:20:51.285570" elapsed="13.894968"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:20:51.254301" elapsed="13.926927"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">REGRESSION</stat>
+<stat pass="0" fail="1" skip="0">SMOKE</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="PracticeProjectUITest">Tests.PracticeProjectUITest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="e2eTest">Tests.PracticeProjectUITest.e2eTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

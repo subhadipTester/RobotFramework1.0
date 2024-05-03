@@ -1,0 +1,26 @@
+datasources:b32079c313a565b1ac4fdd1d04ff3dc296f5b8f7
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:eb8caf880eb7aaedec0a81fb5d180b0e0a4ec9a8
+--test Tests.PracticeProjectAPITest.e2eAPITest.Play around with Dictionary
+--test Tests.PracticeProjectAPITest.e2eAPITest.Add Book into Library Database
+--test Tests.PracticeProjectAPITest.e2eAPITest.Retrieve the Book Details which got added using BookID
+--test Tests.PracticeProjectAPITest.e2eAPITest.Retrieve the Book Details which got added using AuthorName
+--test Tests.PracticeProjectAPITest.e2eAPITest.Delete the Book from database
+--test Tests.PracticeProjectUITest.e2eTest.Validate Unsuccessful login
+--test Tests.PracticeProjectUITest.e2eTest.End to End ecommerce Product validation
+--test Tests.PracticeProjectUITest.e2eTest.Select the Form and Navigate to child window
+--test Tests.PracticeProjectUITest.testDemo1.Login with correct Username and Password
+--test Tests.PracticeProjectUITest.testDemo2.Validate Unsuccessful login
+--test Tests.PracticeProjectUITest.testDemo3.Validate Unsuccessful login
+--test Tests.PracticeProjectUITest.testDemo3.Validate Cards display in the shopping page
+--test Tests.PracticeProjectUITest.testDemo3.Select the Form and Navigate to child window
+--test Tests.PracticeProjectUITest.testDemo4.Select the Form and Navigate to child window
+--test Tests.PracticeProjectUITest.testDemo4.Validate Child window Functionality
+--test Tests.PracticeProjectUITest.testDemo5.Invalid username
+--test Tests.PracticeProjectUITest.testDemo5.Invalid password
+--test Tests.PracticeProjectUITest.testDemo5.special characters
+--test Tests.PracticeProjectUITest.testDemo6.Login with parameterised user ${username} and password ${password}
+--test Tests.PracticeProjectUITest.testDemo7.Validate Unsuccessful login
+--test Tests.PracticeProjectUITest.testDemo7.Validate Cards display in the shopping page
+--test Tests.PracticeProjectUITest.testDemo7.Select the Form and Navigate to child window

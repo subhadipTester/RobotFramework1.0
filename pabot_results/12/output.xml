@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-03T21:20:58.988305" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests">
+<suite id="s1-s1" name="PracticeProjectUITest" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest">
+<suite id="s1-s1-s1" name="testDemo3" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo3.robot">
+<test id="s1-s1-s1-t1" name="Select the Form and Navigate to child window" line="32">
+<kw name="open the browser with login page url" owner="Generic" type="SETUP">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:01.118076" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-03T21:21:01.117621" elapsed="5.987506"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:07.106643" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-03T21:21:07.105627" elapsed="3.195024"/>
+</kw>
+<status status="PASS" start="2024-05-03T21:21:01.110632" elapsed="9.190519"/>
+</kw>
+<kw name="Fill the Login Details and Login Form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:10.310692" level="INFO">Typing text 'rahulshettyacademy' into text field 'id:username'.</msg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T21:21:10.309585" elapsed="1.315201"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:11.626785" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-05-03T21:21:11.849006" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T21:21:11.625786" elapsed="0.573166"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:12.199809" level="INFO">Clicking element 'css:input[value='user']'.</msg>
+<arg>css:input[value='user']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T21:21:12.199452" elapsed="0.463054"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-05-03T21:21:12.663005" elapsed="0.516189"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:13.180195" level="INFO">Clicking button 'id:okayBtn'.</msg>
+<arg>id:okayBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T21:21:13.179698" elapsed="0.191451"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:13.372649" level="INFO">Clicking button 'id:okayBtn'.</msg>
+<msg time="2024-05-03T21:21:14.164907" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-03T21:21:14.165437" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=124.0.6367.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF720FB1502+60802]
+	(No symbol) [0x00007FF720F2AC02]
+	(No symbol) [0x00007FF720DE7B13]
+	(No symbol) [0x00007FF720E38052]
+	(No symbol) [0x00007FF720E2AE8B]
+	(No symbol) [0x00007FF720E5AB7A]
+	(No symbol) [0x00007FF720E2A7C6]
+	(No symbol) [0x00007FF720E5AD90]
+	(No symbol) [0x00007FF720E7A224]
+	(No symbol) [0x00007FF720E5A923]
+	(No symbol) [0x00007FF720E28FEC]
+	(No symbol) [0x00007FF720E29C21]
+	GetHandleVerifier [0x00007FF7212B411D+3217821]
+	GetHandleVerifier [0x00007FF7212F60B7+3488055]
+	GetHandleVerifier [0x00007FF7212EF03F+3459263]
+	GetHandleVerifier [0x00007FF72106B846+823494]
+	(No symbol) [0x00007FF720F35F9F]
+	(No symbol) [0x00007FF720F30EC4]
+	(No symbol) [0x00007FF720F31052]
+	(No symbol) [0x00007FF720F218A4]
+	BaseThreadInitThunk [0x00007FFD83B77344+20]
+	RtlUserThreadStart [0x00007FFD846A26B1+33]
+</msg>
+<arg>id:okayBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-03T21:21:13.371149" elapsed="0.806707">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=124.0.6367.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF720FB1502+60802]
+	(No symbol) [0x00007FF720F2AC02]
+	(No symbol) [0x00007FF720DE7B13]
+	(No symbol) [0x00007FF720E38052]
+	(No symbol) [0x00007FF720E2AE8B]
+	(No symbol) [0x00007FF720E5AB7A]
+	(No symbol) [0x00007FF720E2A7C6]
+	(No symbol) [0x00007FF720E5AD90]
+	(No symbol) [0x00007FF720E7A224]
+	(No symbol) [0x00007FF720E5A923]
+	(No symbol) [0x00007FF720E28FEC]
+	(No symbol) [0x00007FF720E29C21]
+	GetHandleVerifier [0x00007FF7212B411D+3217821]
+	GetHandleVerifier [0x00007FF7212F60B7+3488055]
+	GetHandleVerifier [0x00007FF7212EF03F+3459263]
+	GetHandleVerifier [0x00007FF72106B846+823494]
+	(No symbol) [0x00007FF720F35F9F]
+	(No symbol) [0x00007FF720F30EC4]
+	(No symbol) [0x00007FF720F31052]
+	(No symbol) [0x00007FF720F218A4]
+	BaseThreadInitThunk [0x00007FFD83B77344+20]
+	RtlUserThreadStart [0x00007FFD846A26B1+33]
+</status>
+</kw>
+<kw name="Wait Until Element Is Not Visible" owner="SeleniumLibrary">
+<arg>css:.modal-body</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<status status="NOT RUN" start="2024-05-03T21:21:14.178855" elapsed="0.000000"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<arg>css:select[class='form-control']</arg>
+<arg>teach</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:21:14.179355" elapsed="0.000000"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>css:#terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:21:14.179855" elapsed="0.000000"/>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<arg>id:terms</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" start="2024-05-03T21:21:14.180354" elapsed="0.000000"/>
+</kw>
+<arg>${user_name}</arg>
+<arg>${valid_password}</arg>
+<status status="FAIL" start="2024-05-03T21:21:10.301650" elapsed="3.879204">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=124.0.6367.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF720FB1502+60802]
+	(No symbol) [0x00007FF720F2AC02]
+	(No symbol) [0x00007FF720DE7B13]
+	(No symbol) [0x00007FF720E38052]
+	(No symbol) [0x00007FF720E2AE8B]
+	(No symbol) [0x00007FF720E5AB7A]
+	(No symbol) [0x00007FF720E2A7C6]
+	(No symbol) [0x00007FF720E5AD90]
+	(No symbol) [0x00007FF720E7A224]
+	(No symbol) [0x00007FF720E5A923]
+	(No symbol) [0x00007FF720E28FEC]
+	(No symbol) [0x00007FF720E29C21]
+	GetHandleVerifier [0x00007FF7212B411D+3217821]
+	GetHandleVerifier [0x00007FF7212F60B7+3488055]
+	GetHandleVerifier [0x00007FF7212EF03F+3459263]
+	GetHandleVerifier [0x00007FF72106B846+823494]
+	(No symbol) [0x00007FF720F35F9F]
+	(No symbol) [0x00007FF720F30EC4]
+	(No symbol) [0x00007FF720F31052]
+	(No symbol) [0x00007FF720F218A4]
+	BaseThreadInitThunk [0x00007FFD83B77344+20]
+	RtlUserThreadStart [0x00007FFD846A26B1+33]
+</status>
+</kw>
+<kw name="Close existing Browser session" owner="Generic" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-03T21:21:14.182461" elapsed="3.303106"/>
+</kw>
+<status status="PASS" start="2024-05-03T21:21:14.181855" elapsed="3.303712"/>
+</kw>
+<tag>SMOKE</tag>
+<status status="FAIL" start="2024-05-03T21:21:01.104484" elapsed="16.381583">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=124.0.6367.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF720FB1502+60802]
+	(No symbol) [0x00007FF720F2AC02]
+	(No symbol) [0x00007FF720DE7B13]
+	(No symbol) [0x00007FF720E38052]
+	(No symbol) [0x00007FF720E2AE8B]
+	(No symbol) [0x00007FF720E5AB7A]
+	(No symbol) [0x00007FF720E2A7C6]
+	(No symbol) [0x00007FF720E5AD90]
+	(No symbol) [0x00007FF720E7A224]
+	(No symbol) [0x00007FF720E5A923]
+	(No symbol) [0x00007FF720E28FEC]
+	(No symbol) [0x00007FF720E29C21]
+	GetHandleVerifier [0x00007FF7212B411D+3217821]
+	GetHandleVerifier [0x00007FF7212F60B7+3488055]
+	GetHandleVerifier [0x00007FF7212EF03F+3459263]
+	GetHandleVerifier [0x00007FF72106B846+823494]
+	(No symbol) [0x00007FF720F35F9F]
+	(No symbol) [0x00007FF720F30EC4]
+	(No symbol) [0x00007FF720F31052]
+	(No symbol) [0x00007FF720F218A4]
+	BaseThreadInitThunk [0x00007FFD83B77344+20]
+	RtlUserThreadStart [0x00007FFD846A26B1+33]
+</status>
+</test>
+<doc>To validate login form</doc>
+<status status="FAIL" start="2024-05-03T21:20:59.163504" elapsed="18.323562"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:20:59.157054" elapsed="18.331035"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:20:59.110365" elapsed="18.378723"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">SMOKE</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="PracticeProjectUITest">Tests.PracticeProjectUITest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="testDemo3">Tests.PracticeProjectUITest.testDemo3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

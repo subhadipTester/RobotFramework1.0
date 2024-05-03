@@ -1,0 +1,16 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.testDemo4 :: To validate login form                                     
+==============================================================================
+Select the Form and Navigate to child window                          | PASS |
+------------------------------------------------------------------------------
+Validate Child window Functionality                                   | PASS |
+------------------------------------------------------------------------------
+Tests.testDemo4 :: To validate login form                             | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\pabot_results\4\output.xml

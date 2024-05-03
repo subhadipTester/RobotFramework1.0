@@ -1,0 +1,32 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.PracticeProjectUITest                                                   
+==============================================================================
+Tests.PracticeProjectUITest.testDemo4 :: To validate login form               
+==============================================================================
+Validate Child window Functionality                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo4.robot:23
+    T:  Validate Child window Functionality    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo4.robot:25
+      Select the link for Child Window    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo4.robot:46
+      Click Element    css:.blinkingText
+______________________________________________________________________________
+| FAIL |
+Element with locator 'css:.blinkingText' not found.
+------------------------------------------------------------------------------
+Tests.PracticeProjectUITest.testDemo4 :: To validate login form       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.PracticeProjectUITest                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\Python Automation Framework\PythonFramework\RobotFramework\pabot_results\14\output.xml

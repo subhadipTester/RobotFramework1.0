@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-03T21:21:25.901782" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests">
+<suite id="s1-s1" name="PracticeProjectUITest" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest">
+<suite id="s1-s1-s1" name="testDemo7" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo7.robot">
+<test id="s1-s1-s1-t1" name="Validate Cards display in the shopping page" line="27">
+<kw name="open the browser with login page url" type="SETUP">
+<msg time="2024-05-03T21:21:28.231921" level="FAIL">No keyword with name 'open the browser with login page url' found.</msg>
+<status status="FAIL" start="2024-05-03T21:21:28.231418" elapsed="0.000603">No keyword with name 'open the browser with login page url' found.</status>
+</kw>
+<kw name="Close existing Browser session" type="TEARDOWN">
+<msg time="2024-05-03T21:21:28.239489" level="FAIL">No keyword with name 'Close existing Browser session' found.</msg>
+<status status="FAIL" start="2024-05-03T21:21:28.238979" elapsed="0.000510">No keyword with name 'Close existing Browser session' found.</status>
+</kw>
+<tag>SANITY</tag>
+<status status="FAIL" start="2024-05-03T21:21:28.218444" elapsed="0.021801">Setup failed:
+No keyword with name 'open the browser with login page url' found.
+
+Also teardown failed:
+No keyword with name 'Close existing Browser session' found.</status>
+</test>
+<doc>To validate login form</doc>
+<status status="FAIL" start="2024-05-03T21:21:26.799035" elapsed="1.443888"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:21:26.768753" elapsed="1.476276"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:21:26.583243" elapsed="1.663170"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">SANITY</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="PracticeProjectUITest">Tests.PracticeProjectUITest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="testDemo7">Tests.PracticeProjectUITest.testDemo7</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-05-03T21:21:28.216664" level="ERROR">Error in file 'D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo7.robot' on line 8: Resource file '..\..\PageObjects\Generic.robot' does not exist.</msg>
+</errors>
+</robot>

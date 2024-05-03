@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-03T21:20:53.501102" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests">
+<suite id="s1-s1" name="PracticeProjectUITest" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest">
+<suite id="s1-s1-s1" name="testDemo1" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo1.robot">
+<test id="s1-s1-s1-t1" name="Login with correct Username and Password" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:20:57.153955" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/login'.</msg>
+<arg>url=https://the-internet.herokuapp.com/login</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-05-03T21:20:57.148968" elapsed="6.173479"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:03.324449" level="INFO">Typing text 'tomsmith' into text field 'username'.</msg>
+<arg>username</arg>
+<arg>tomsmith</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T21:21:03.323447" elapsed="5.009224"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:08.334480" level="INFO">Typing text 'SuperSecretPassword!' into text field 'password'.</msg>
+<arg>password</arg>
+<arg>SuperSecretPassword!</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T21:21:08.333671" elapsed="0.687292"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:09.024978" level="INFO">Clicking button 'class:radius'.</msg>
+<arg>class:radius</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T21:21:09.023367" elapsed="2.874104"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:12.011250" level="INFO">Element 'id=flash' contains text 'You logged into a secure area!'.</msg>
+<arg>id=flash</arg>
+<arg>You logged into a secure area!</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-05-03T21:21:11.897924" elapsed="0.113326"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:12.012255" level="INFO">Clicking link 'Logout'.</msg>
+<arg>Logout</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-05-03T21:21:12.011250" elapsed="1.126935"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-03T21:21:13.138724" elapsed="5.127321"/>
+</kw>
+<tag>SMOKE</tag>
+<status status="PASS" start="2024-05-03T21:20:57.142224" elapsed="21.124833"/>
+</test>
+<status status="PASS" start="2024-05-03T21:20:53.630717" elapsed="24.638777"/>
+</suite>
+<status status="PASS" start="2024-05-03T21:20:53.627286" elapsed="24.643875"/>
+</suite>
+<status status="PASS" start="2024-05-03T21:20:53.582442" elapsed="24.689720"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">SMOKE</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="PracticeProjectUITest">Tests.PracticeProjectUITest</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="testDemo1">Tests.PracticeProjectUITest.testDemo1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,35 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.PracticeProjectUITest                                                   
+==============================================================================
+Tests.PracticeProjectUITest.testDemo3 :: To validate login form               
+==============================================================================
+Validate Unsuccessful login                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo3.robot:19
+    T:  Validate Unsuccessful login    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo3.robot:21
+      Fill the login form    ${user_name}    ${invalid_password}
+      |  ${user_name} = rahulshettyacademy (str)
+      |  ${invalid_password} = learning123 (str)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo3.robot:40
+      Input Text    id:username    ${username}
+      |  ${username} = rahulshettyacademy (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'id:username' not found.
+------------------------------------------------------------------------------
+Tests.PracticeProjectUITest.testDemo3 :: To validate login form       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.PracticeProjectUITest                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\Python Automation Framework\PythonFramework\RobotFramework\pabot_results\10\output.xml

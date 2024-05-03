@@ -1,0 +1,42 @@
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.PracticeProjectUITest                                                   
+==============================================================================
+Tests.PracticeProjectUITest.testDemo7 :: To validate login form               
+==============================================================================
+Validate Cards display in the shopping page                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo7.robot:27
+    T:  Validate Cards display in the shopping page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo7.robot:6
+      open the browser with login page url    
+______________________________________________________________________________
+  
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo7.robot:27
+    T:  Validate Cards display in the shopping page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo7.robot:7
+      Close existing Browser session    
+______________________________________________________________________________
+| FAIL |
+Setup failed:
+No keyword with name 'open the browser with login page url' found.
+
+Also teardown failed:
+No keyword with name 'Close existing Browser session' found.
+------------------------------------------------------------------------------
+Tests.PracticeProjectUITest.testDemo7 :: To validate login form       | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests.PracticeProjectUITest                                           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Tests                                                                 | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  D:\Python Automation Framework\PythonFramework\RobotFramework\pabot_results\20\output.xml

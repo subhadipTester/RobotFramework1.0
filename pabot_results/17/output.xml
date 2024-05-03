@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-05-03T21:21:23.121127" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests">
+<suite id="s1-s1" name="PracticeProjectUITest" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest">
+<suite id="s1-s1-s1" name="testDemo5" source="D:\Python Automation Framework\PythonFramework\RobotFramework\tests\PracticeProjectUITest\testDemo5.robot">
+<test id="s1-s1-s1-t1" name="special characters" line="16">
+<kw name="Validate Unsuccessful login">
+<kw name="open the browser with login page url">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:23.565011" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2024-05-03T21:21:23.565011" elapsed="2.918145"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:26.484160" level="INFO">Opening url 'https://rahulshettyacademy.com/loginpagePractise/'</msg>
+<arg>https://rahulshettyacademy.com/loginpagePractise/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-05-03T21:21:26.483660" elapsed="0.652721"/>
+</kw>
+<status status="PASS" start="2024-05-03T21:21:23.563011" elapsed="3.573869"/>
+</kw>
+<kw name="Fill the login form">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-05-03T21:21:27.141134" level="INFO">Typing text '@#$' into text field 'id:username'.</msg>
+<msg time="2024-05-03T21:21:28.454130" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-05-03T21:21:28.454661" level="FAIL">Element with locator 'id:username' not found.</msg>
+<arg>id:username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-05-03T21:21:27.140065" elapsed="1.322021">Element with locator 'id:username' not found.</status>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:21:28.462759" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>id:signInBtn</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-05-03T21:21:28.463257" elapsed="0.000000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="FAIL" start="2024-05-03T21:21:27.136880" elapsed="1.326878">Element with locator 'id:username' not found.</status>
+</kw>
+<kw name="Wait until it checks and display error message">
+<status status="NOT RUN" start="2024-05-03T21:21:28.464312" elapsed="0.000000"/>
+</kw>
+<kw name="Verify error message is correct">
+<status status="NOT RUN" start="2024-05-03T21:21:28.464812" elapsed="0.000000"/>
+</kw>
+<arg>@#$</arg>
+<arg>learning</arg>
+<status status="FAIL" start="2024-05-03T21:21:23.562013" elapsed="4.902799">Element with locator 'id:username' not found.</status>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-05-03T21:21:28.465899" elapsed="2.544676"/>
+</kw>
+<status status="FAIL" start="2024-05-03T21:21:23.559996" elapsed="7.450579">Element with locator 'id:username' not found.</status>
+</test>
+<doc>To validate login form</doc>
+<status status="FAIL" start="2024-05-03T21:21:23.205249" elapsed="7.806826"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:21:23.202249" elapsed="7.811899"/>
+</suite>
+<status status="FAIL" start="2024-05-03T21:21:23.171074" elapsed="7.845074"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="PracticeProjectUITest">Tests.PracticeProjectUITest</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="testDemo5">Tests.PracticeProjectUITest.testDemo5</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
